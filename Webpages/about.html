@@ -1,23 +1,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Local CSS -->
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/mediaStyle.css">
     <link rel="icon" href="https://drive.google.com/thumbnail?id=1hVYDmePslSjIUCtU3PoTa37QB60_AujD">
 </head>
 <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Tommy Chuah</a>
+              <a class="navbar-brand" href="index.html">TommyChuah</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,7 +45,48 @@
 
         <!-- Top Container -->
         <div class="top-container">
-            About Me
+            <h1>About Me</h1>
         </div>
+
+        <!-- Card Container -->
+        <div class="card-container">
+          <table>
+            <tr>
+                <td>
+                  <img class="profilePic" src="https://drive.google.com/thumbnail?id=1vULicIxW1AI5H2aACBU7qghTDNbvFbSI" alt="Profile-Pic">
+                </td>        
+                <td>
+                  <h4>Basic Profile Card</h4>
+                  
+                  <p><b>Name: </b> Wen Zhe Chuah</p>
+                  <p><b>Nickname: </b> Tommy</p>
+                  <p><b>Born in: </b> Penang, Malaysia</p>
+                  <p><b>Currently Reside in: </b> Baton Rouge, Louisiana</p>
+                  <p><b>Hobby: </b> Play Chess, Play Guitar, Watch Soccer/Football</p>
+                  <a class="gitIcon" href="https://github.com/tommycwz"><i class="fab fa-github fa-2x"><br><p>Click Me</p></i></a>
+                </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Education Container -->
+        <div class="education-container">
+          <h3>Education</h3>
+          <h5>Irvine Valley College (Jan 2017 – May 2019)</h5>
+          <p>Irvine Valley College (IVC) is an exquisite community college that located in Irvine, California. In the end 2016, I traveled approximately 20 hours from Malaysia to California myself to start my new journey for my higher education. In IVC, I took some basic courses for my major and most of the general education courses that are needed to graduate. After Spring 2019, I bid farewell to this lovely city and head to Baton Rouge, LA to continue my education.</p>
+          <h5>Louisiana State University (Aug 2019 – May 2021)</h5>
+          <p>Louisiana State University (LSU) is an University that has an incredible passion for College Football. Whenever the football season starts, I can feel the hypes circulating the whole campus even that I am not a huge football fans. In LSU, I take mostly Computer Science courses because I took most of the needed general education course in IVC. My knowledge for my major improve significantly in LSU.</p>
+        </div>
+
+        <!-- Work Experience Container -->
+        <div class="experience-container">
+          <h3>Work Experience</h3>
+          <h5>SBT Software Solution (Internship for Summer 2018)</h5>
+          <p>During Summer 2018, I went back to Malaysia for an internship while having a break from my education. It was an exceptional internship where I learn how a real-life full-stack company works. During this internship, I was assigned to work on a hybrid application for a company. This application is to allow the company’s employee to file their claims and register their sick leave. This hybrid app was done in Ionic 3 framework, AngularJS, and Typescript. As a novice programmer, my knowledge of this job is impossible without any guidance. Therefore, my assignment for that time was mainly learning basic stuff like HTML, CSS, AngularJS, and learn how a hybrid app works. However, I got the chance to work on practical stuff in the project like setting up input forms for the employee to enter their information for their claims. The main thing that I have taken away from this work experience is none other than how a programming company works in the real world. It is a wonderful experience for a fresh programmer like me.</p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="../Scripts/app.js"></script>
 </body>
 </html>

@@ -32,20 +32,40 @@ body{
 
 .splashHeader{
     position:absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    animation: type 3s 3 steps(22);
+    animation: type 3s steps(22);
     overflow: hidden;
     white-space: nowrap;
-    font-family: 'Notable', sans-serif;
-    font-size: 40px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 150px;
     border-right: 4px solid black;
     width: 11ch;
+    color: white;
 }
-  
+
+@media only screen and (max-width: 500px){
+    .splashHeader{
+        position:absolute;
+        top: 45%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        animation: type 3s steps(22);
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: 'Brush Script MT', cursive;
+        font-size: 370%;
+        border-right: 4px solid black;
+        width: 11ch;
+        color: yellow;
+    }
+}
+
 @keyframes type{
     0%{
         width: 0ch;
@@ -65,11 +85,120 @@ body{
     animation: fadeIn 1s ease-in forwards;
 }
 
+/* NavBar */
+.navbar-brand{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 150%;
+}
+
 .top-container{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 3%;
     color: white;
     font-size: 450%;
     font-family: 'Notable', sans-serif;
-
 }
+
+/* Index: Intro Container */
+.intro-container{
+    text-align: center;
+    margin-top: 3%;
+    color: white;
+}
+.intro-container > h1{
+    font-size: 600%;
+    font-family: 'Notable', sans-serif;
+    display: inline-block;
+}
+.intro-container > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    padding-bottom: 5px;
+}
+
+/* Index: Contact Container */
+.contact-container{
+    text-align: left;
+    margin: 75px 25% 25px 25%;
+    color: white;
+    font-family: 'Notable', sans-serif;
+    border: white solid;
+    border-width: 0.5px;
+    border-radius: 5%;
+    padding: 15px;
+}
+.contact-container > h2{
+    text-align: center;
+}
+input,textarea{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submit-button{
+    width: 100%;
+    display: block;
+}
+.errmsg{
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: red;
+    padding: 10px;
+}
+
+/* About: Card Container */
+.card-container{
+    background-color: white;
+    margin: 3% auto;
+    width: 550px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+}
+td > h4{
+    display: inline-block;
+    text-decoration: underline;
+}
+.profilePic{
+    margin: 15px 20px;
+}
+.gitIcon{
+    text-align: center;
+    font-size: 80%;
+}
+
+.fa-github{
+    color: black;
+    position: absolute;
+    animation: spinner 5s infinite;
+    right: 15px;
+    top: 10px;
+}
+.fa-github:hover{
+    background-color: black;
+    color: white;
+    border: solid;
+    border-radius: 20%;
+    animation-play-state: paused;
+}
+@keyframes spinner {
+    0% {
+       opacity: 1; 
+       transform: scale(1)
+    }
+    20% {
+        opacity: 1;
+        transform: scale(.75)
+    }
+    40% {
+      opacity: 1;
+      transform: scale(1)
+    }
+    60% {
+      opacity: 1;
+      transform: scale(.75)
+    } 
+    100% {
+     opacity: 1;
+      transform: scale(1)
+    }
+  }
