@@ -145,27 +145,21 @@ input,textarea{
     padding: 10px;
 }
 
-/* About: Card Container */
-.card-container{
-    background-color: white;
+/* About: Profile Picture Container */
+.profile-pic-container{
+    text-align:center;
+    background-color: #FDFEFE;
+    max-width: 50%;
     margin: 3% auto;
-    width: 550px;
-    height: 250px;
-    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 8px;
     position: relative;
 }
-td > h4{
-    display: inline-block;
-    text-decoration: underline;
-}
 .profilePic{
-    margin: 15px 20px;
+    display: inline-block;
+    margin: 3% auto;
+    padding: 2%;
 }
-.gitIcon{
-    text-align: center;
-    font-size: 80%;
-}
-
 .fa-github{
     color: black;
     position: absolute;
@@ -201,4 +195,36 @@ td > h4{
      opacity: 1;
       transform: scale(1)
     }
-  }
+}
+
+/* Education Container */
+.education-container{
+    color: white;
+    padding: 5%;
+}
+.education-container > h3{
+    display: block;
+    margin: 3% auto;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Notable', sans-serif;
+}
+.education-container > h5{
+    margin: 3% auto;
+}
+
+/* Work Container */
+.experience-container{
+    color: white;
+    padding: 5%;
+}
+.experience-container > h3{
+    display: block;
+    margin: 3% auto;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Notable', sans-serif;
+}
+.experience-container > h5{
+    margin: 3% auto;
+}

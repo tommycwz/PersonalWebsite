@@ -1,5 +1,5 @@
 /* MEDIA */
-@media (max-width: 550px){
+@media screen and (min-width: 750px){
     /* Index: Intro Container */
     .intro-container{
         text-align: center;
@@ -29,37 +29,50 @@
         padding: 15px;
     }
 
-    /* About: Picture Container */
-    .profile-pic-container{
-        text-align:center;
-        background-color: #FDFEFE;
-        max-width: 80%;
-        margin: 3% auto;
-        overflow: hidden;
-        border-radius: 8px;
+    /* About: Card Container */
+    .card-container{
+        background-color: white;
+        margin: 3% auto 0 auto;
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
         position: relative;
+        text-align: center;
+        align-items: center;
+    }
+
+    table{
+        text-align: center;
+        overflow-y: auto;
+    }
+    tr{
+        margin: auto 30% auto 30%;
+        text-align: center;
+        align-items: center;
+    }
+
+    td{
+        display: block;
+        text-align: center;
+    }
+    .gitIcon{
+        text-align: center;
+        font-size: 80%;
+        display: block;
     }
     .fa-github{
         color: black;
-        position: absolute;
+        position: relative;
         animation: spinner 5s infinite;
-        right: 1%;
-        top: 10px;
-        font-size: 100%;
-    }
-    .fa-github:hover{
-        background-color: black;
-        color: white;
-        border: solid;
-        border-radius: 20%;
-        animation-play-state: paused;
+        right: 0;
+        bottom: 1px;
     }
 
-    /* Education Container */
-    .education-container > h5{
+    td > h4{
         display: block;
-        font-size: 1rem;
-        margin: 5% auto;
-        font-weight: bold;
+        text-decoration: underline;
+    }
+    .profilePic{
+        margin: 15px 20px;
     }
   }
