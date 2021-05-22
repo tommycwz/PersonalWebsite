@@ -2,6 +2,29 @@ body{
     background-color: #2e2e2e;
 }
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+    width: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dee4e7; 
+  }
+/* SplashScreen */
 .splash{
     position: fixed;
     top: 0;
@@ -91,11 +114,11 @@ body{
     font-size: 150%;
 }
 
-.top-container{
+.top-container > h1{
     text-align: center;
     margin-top: 3%;
     color: white;
-    font-size: 450%;
+    font-size: 500%;
     font-family: 'Notable', sans-serif;
 }
 
@@ -201,6 +224,8 @@ input,textarea{
 .education-container{
     color: white;
     padding: 5%;
+    width: 70%;
+    margin: 0 auto;
 }
 .education-container > h3{
     display: block;
@@ -217,6 +242,8 @@ input,textarea{
 .experience-container{
     color: white;
     padding: 5%;
+    width: 70%;
+    margin: 0 auto;
 }
 .experience-container > h3{
     display: block;
@@ -227,4 +254,83 @@ input,textarea{
 }
 .experience-container > h5{
     margin: 3% auto;
+}
+
+/* Language Speaking Container */
+.speak-container, .programming-container, .softwareExp{
+    color: white;
+    margin: 3% auto;
+    display: block;
+    width: 70%;
+    text-align: center;
+}
+.LangTri, .webskills, .dataskills, .gameskills, .generalskills, .softwares{
+    line-height: 1.6;
+    border: white solid 1px;
+    padding: 2%;
+    margin: 5% auto;
+    width: 70%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* Projects */
+.projOdd{
+    margin: 10px auto;
+    width: 70%;
+}
+.carousel{
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+.pimg{
+    height: 500px!important;
+}
+.ptitle{
+    color: white;
+}
+.ptitle > h2{
+    display: inline-block;
+    margin: 0 2% 0 0;
+}
+.ptitle > button{
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 3px;
+    animation: spinner 5s infinite;
+}
+.hvr:hover{
+    background-color: #2e2e2e;
+    color: white;
+    animation-play-state: paused;
+}
+@keyframes spinner {
+    0% {
+       opacity: 1; 
+       transform: scale(1)
+    }
+    20% {
+        opacity: 1;
+        transform: scale(.95)
+    }
+    40% {
+      opacity: 1;
+      transform: scale(1)
+    }
+    60% {
+      opacity: 1;
+      transform: scale(.95)
+    } 
+    100% {
+     opacity: 1;
+      transform: scale(1)
+    }
+}
+.desc{
+    color: white;
+    display: inline-block;
+    margin-bottom: 7%;
 }

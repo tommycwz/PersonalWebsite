@@ -1,5 +1,13 @@
 /* MEDIA */
-@media (max-width: 550px){
+@media (max-width: 950px){
+    .top-container > h1{
+        text-align: center;
+        margin-top: 3%;
+        color: white;
+        font-size: 300%;
+        font-family: 'Notable', sans-serif;
+    }
+
     /* Index: Intro Container */
     .intro-container{
         text-align: center;
@@ -28,7 +36,6 @@
         border-radius: 5%;
         padding: 15px;
     }
-
     /* About: Picture Container */
     .profile-pic-container{
         text-align:center;
@@ -56,10 +63,45 @@
     }
 
     /* Education Container */
+    .education-container, .experience-container{
+        width: 100%;
+    }
     .education-container > h5{
         display: block;
         font-size: 1rem;
         margin: 5% auto;
         font-weight: bold;
+    }
+
+    /* Skill pages */
+    .speak-container, .programming-container, .softwareExp{
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .LangTri, .webskills, .dataskills, .gameskills, .generalskills, .softwares{
+        line-height: 1.6;
+        border: white solid 1px;
+        padding: 2%;
+        margin: 5% auto;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    /* Project */
+    .projOdd{
+        margin: 10px auto;
+        width: 95%;
+    }
+    .carousel{
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 8px;
+    }
+    .pimg{
+        height: 35%!important;
     }
   }
