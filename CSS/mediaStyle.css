@@ -8,21 +8,18 @@
         font-family: 'Notable', sans-serif;
     }
 
+    .material-icons-outlined{
+        display: none;
+    }
     /* Index: Intro Container */
     .intro-container{
-        text-align: center;
-        margin-top: 3%;
-        color: white;
+        width: 90%;
     }
     .intro-container > h1{
         font-size: 400%;
-        font-family: 'Notable', sans-serif;
-        display: inline-block;
     }
     .intro-container > p{
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 130%;
-        padding-bottom: 5px;
     }
 
     /* Index: Contact Container */
@@ -64,7 +61,8 @@
 
     /* Education Container */
     .education-container, .experience-container{
-        width: 100%;
+        width: 95%;
+        text-align: center;
     }
     .education-container > h5{
         display: block;

@@ -1,29 +1,63 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #2e2e2e;
+    overflow-x: hidden;
 }
 
+/* Clouds */
+.material-icons-outlined{
+    position: absolute;
+    color: white;
+}
+.lvl1{
+    margin-top: 0;
+    font-size: 900%;
+    z-index: -2;
+    animation: animateCloud 30s linear infinite;
+	transform: scale(0.65);
+}
+@keyframes animateCloud {
+    0% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: 5%;
+    }
+    50% {
+        margin-left: 10%;
+    }
+    75% {
+        margin-left: 5%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
 /* Scroll Bar */
 ::-webkit-scrollbar {
     width: 5px;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+/* Track */
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: white; 
     border-radius: 10px;
     width: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #dee4e7; 
-  }
+}
+
 /* SplashScreen */
 .splash{
     position: fixed;
@@ -54,7 +88,7 @@ body{
 }
 
 .splashHeader{
-    position:absolute;
+    position:relative;
     top: 45%;
     left: 0;
     right: 0;
@@ -125,16 +159,39 @@ body{
 /* Index: Intro Container */
 .intro-container{
     text-align: center;
-    margin-top: 3%;
-    color: white;
+    background-color: white;
+    border: solid 12px #BEBDB8;
+    border-radius: 8px;
+    margin: 3% auto 0 auto;
+    width: 50%;
+    font-family: 'Permanent Marker', cursive;
+}
+.intro-container::after::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 13px;
+    background: red;
+    top: 22px;
+  }
+.intro-container::after{
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 13px;
+  background: grey;
+  top: 22px;
 }
 .intro-container > h1{
     font-size: 600%;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     display: inline-block;
 }
 .intro-container > p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    display: inline-block;
     font-size: 130%;
     padding-bottom: 5px;
 }
@@ -223,8 +280,7 @@ input,textarea{
 /* Education Container */
 .education-container{
     color: white;
-    padding: 5%;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 .education-container > h3{
@@ -241,8 +297,7 @@ input,textarea{
 /* Work Container */
 .experience-container{
     color: white;
-    padding: 5%;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 .experience-container > h3{
@@ -301,6 +356,19 @@ input,textarea{
     margin: 0 0 10px 0;
     padding: 3px;
     animation: spinner 5s infinite;
+}
+.ptitle > p{
+    display: inline-block;
+    margin-right: 0.5%;
+}
+.tag{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    padding-top: 0.5px;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+    margin-right: 1%;
 }
 .hvr:hover{
     background-color: #2e2e2e;
