@@ -153,7 +153,7 @@ body{
     margin-top: 3%;
     color: white;
     font-size: 500%;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Caveat Brush', cursive;
 }
 
 /* Index: Intro Container */
@@ -183,7 +183,7 @@ body{
     border-radius: 6px;
   } 
   .intro-container:before {
-    content: '🍎Apple';
+    content: '🍎Pie Laptop';
     text-align: center;
     font-size: 25px;
     display: block;
@@ -206,8 +206,9 @@ body{
     overflow: hidden;
     border: none;
     background-color: lightblue;
-    text-align: justify;
-    padding: 5%;
+    text-align: center;
+    padding: 2% 1%;
+    overflow-y: auto;
   }
   .content:hover{
     cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
@@ -229,7 +230,7 @@ body{
     margin: 15px 15% 25px 15%;
     color: white;
     background-color: #2e2e2e;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Caveat Brush', cursive;
     border: white solid;
     border-width: 0.5px;
     border-radius: 5%;
@@ -237,6 +238,8 @@ body{
 }
 .contact-container > h2{
     text-align: center;
+    font-size: 250%;
+    margin: none;
 }
 #contact-me{
     display: block;
@@ -253,12 +256,19 @@ body{
     border-radius: 8px;
     font-size: 170%;
 }
+label{
+    font-size: 200%;
+}
 input,textarea{
     font-family: Arial, Helvetica, sans-serif;
+}
+.form-control{
+    font-size: 1.4rem;
 }
 .submit-button{
     width: 100%;
     display: block;
+    font-size: 200%;
 }
 .submit-button:hover , #contact-me:hover, #contact-back:hover{
     background-color: #E0E0E0;
@@ -335,7 +345,7 @@ input,textarea{
     margin: 3% auto;
     text-decoration: underline;
     text-align: center;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Caveat Brush', cursive;
 }
 .education-container > h5{
     margin: 3% auto;
@@ -352,7 +362,7 @@ input,textarea{
     margin: 3% auto;
     text-decoration: underline;
     text-align: center;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Caveat Brush', cursive;
 }
 .experience-container > h5{
     margin: 3% auto;

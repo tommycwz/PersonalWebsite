@@ -4,7 +4,6 @@ const splash = document.querySelector('.splash');
 splash.onanimationend = () => {
     console.log('Animation ended');
     setTimeout(()=>{
-        // splash.classList.add('display-none');
         window.location.href = "Webpages/index.html";
     },500);
 };

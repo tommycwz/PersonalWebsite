@@ -5,7 +5,6 @@
         margin-top: 3%;
         color: white;
         font-size: 300%;
-        font-family: 'Notable', sans-serif;
     }
 
     .material-icons-outlined{
@@ -57,11 +56,9 @@
       }
       #content > h1{
         text-align: center;
-        font-family: 'DM Mono', monospace;
         font-size: 600%;
      }
      #content > P{
-       font-family: 'DM Mono', monospace;
        display: inline-block;
        font-size: 150%;
        padding-bottom: 5px;
@@ -71,7 +68,6 @@
         text-align: left;
         margin: 25px 0;
         color: white;
-        font-family: 'Notable', sans-serif;
         border: white solid;
         border-width: 0.5px;
         border-radius: 5%;
@@ -85,6 +81,10 @@
         margin-left: auto; 
         margin-right: 0;
         float: none;
+    }
+    .submit-button:hover , #contact-me:hover, #contact-back:hover{
+        background-color: #E0E0E0;
+        cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
     }
     /* About: Picture Container */
     .profile-pic-container{
