@@ -15,6 +15,21 @@ $(window).bind("pageshow", function() {
     form[0].reset();
 });
 
+// Contact Me
+function contactButton(args){
+    if(args == "to"){
+        document.getElementById("content").style.display = "none";
+        document.getElementById("contact-container").style.display = "block";
+        document.getElementById("contact-back").style.display = "block";
+    }
+    else{
+        document.getElementById("content").style.display = "block";
+        document.getElementById("contact-container").style.display = "none";
+        document.getElementById("contact-back").style.display = "none";
+    }
+    
+}
+
 // Contact Form
 function validateForm() {
     event.preventDefault();
