@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../CSS/mediaStyle.css">
     <!-- Image Import from Google Drive -->
     <link rel="icon" href="https://drive.google.com/thumbnail?id=1hVYDmePslSjIUCtU3PoTa37QB60_AujD">
-    <!-- <meta http-equiv="refresh" content="0; URL=Webpages/index.html"> -->
+    <meta http-equiv="refresh" content="0; URL=Webpages/index.html">
 </head>
 <body>
     
