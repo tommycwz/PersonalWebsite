@@ -1,2 +1,0 @@
-# PersonalWebsite
-www.tommycwz.xyz
